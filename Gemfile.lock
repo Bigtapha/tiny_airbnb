@@ -45,6 +45,7 @@ GEM
     arel (9.0.0)
     autoprefixer-rails (9.7.1)
       execjs
+    awesome_print (1.8.0)
     bcrypt (3.1.13)
     bindex (0.8.1)
     bootsnap (1.4.5)
@@ -66,6 +67,8 @@ GEM
       railties (>= 3.2, < 6.1)
     erubi (1.9.0)
     execjs (2.7.0)
+    faker (2.7.0)
+      i18n (>= 1.6, < 1.8)
     ffi (1.11.1)
     font-awesome-sass (5.6.1)
       sassc (>= 1.11)
@@ -192,9 +195,11 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails
+  awesome_print
   bootsnap
   devise
   dotenv-rails
+  faker
   font-awesome-sass (~> 5.6.1)
   jbuilder (~> 2.0)
   listen (~> 3.0.5)
