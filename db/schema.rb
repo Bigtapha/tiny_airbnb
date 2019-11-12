@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_11_161044) do
+ActiveRecord::Schema.define(version: 2019_11_12_093849) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "rents", force: :cascade do |t|
+    t.date "date"
+    t.bigint "user_id"
+    t.bigint "tiny_house_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["tiny_house_id"], name: "index_rents_on_tiny_house_id"
+    t.index ["user_id"], name: "index_rents_on_user_id"
+  end
 
   create_table "tiny_houses", force: :cascade do |t|
     t.bigint "owner_id"
@@ -47,5 +57,7 @@ ActiveRecord::Schema.define(version: 2019_11_11_161044) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "rents", "tiny_houses"
+  add_foreign_key "rents", "users"
   add_foreign_key "tiny_houses", "users", column: "owner_id"
 end
