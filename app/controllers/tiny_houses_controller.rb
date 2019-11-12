@@ -60,7 +60,8 @@ class TinyHousesController < ApplicationController
       :bedroom_number,
       :sauna,
       :kitchen,
-      :wifi
+      :wifi,
+      :photo
     )
   end
 end
