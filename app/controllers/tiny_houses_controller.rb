@@ -1,0 +1,2 @@
+class TinyHousesController < ApplicationController
+end
