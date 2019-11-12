@@ -1,4 +1,6 @@
 require 'faker'
+
+
 TinyHouse.destroy_all
 User.destroy_all
 
@@ -8,7 +10,7 @@ User.destroy_all
     telephon: Faker::PhoneNumber.phone_number,
     description: Faker::Lorem.sentence(word_count: 10, supplemental: true),
     email: Faker::Internet.email,
-    password: Faker::Beer.name
+    password: Faker::Name.initials(number: 6)
 
   )
   user.save!
@@ -30,6 +32,7 @@ User.destroy_all
     created_at: Faker::Date.between(from: 45.days.ago, to: Date.today),
     updated_at: Faker::Date.between(from: 3.days.ago, to: Date.today)
   )
+  tiny.remote_photo_url = 'https://66.media.tumblr.com/7686e94492aab4d360edd71ac13b2edf/babc445b10eae5f8-69/s1280x1920/8d4d70327e7b4811e91c61203947fc5aba210ff1.jpg'
   tiny.save!
 end
 
