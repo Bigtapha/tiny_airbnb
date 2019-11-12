@@ -4,6 +4,7 @@
   <% @tiny_houses.each do |tiny| %>
     <h2><%= tiny.title %></h2>
     <p><%= tiny.description %></p>
+    <p class="photo-index"><%= tiny.photo %></p>
     <p><%= link_to 'show', tiny_house_path(tiny.id) %></p>
   <% end %>
 </div>
