@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  # resources :tiny_houses
   root to: 'pages#home'
 
   resources :tiny_houses
