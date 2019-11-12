@@ -3,6 +3,14 @@ class TinyHousesController < ApplicationController
     @tiny_houses = TinyHouse.all
   end
 
+  def mine
+    @my_tiny_houses = current_user.own_tiny_houses
+  end
+
+  def my_rents
+    @rent_tiny_houses = current_user.tiny_houses
+  end
+
   def show
     @tiny_house = TinyHouse.find(params[:id])
   end
