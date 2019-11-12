@@ -1,0 +1,14 @@
+  <%= simple_form_for(@tiny_house) do |f| %>
+    <%= f.input :title %>
+    <%= f.input :description, as: :text %>
+    <%= f.input :location %>
+    <%= f.input :travellers_number %>
+    <%= f.input :bed_number %>
+    <%= f.input :bedroom_number %>
+    <%= f.input :kitchen, as: :radio_buttons %>
+    <%= f.input :wifi, as: :radio_buttons %>
+    <%= f.input :sauna, as: :radio_buttons %>
+    <%= f.input :price %>
+    <%= f.hint 'price per night' %>
+    <%= f.button :submit %>
+  <% end %>
