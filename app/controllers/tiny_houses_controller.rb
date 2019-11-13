@@ -1,6 +1,13 @@
 class TinyHousesController < ApplicationController
   def index
     @tiny_houses = TinyHouse.all
+
+    @markers = @tiny_houses.map do |tiny|
+      {
+        lat: tiny.latitude,
+        lng: tiny.longitude
+      }
+    end
   end
 
   def mine
