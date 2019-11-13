@@ -29,7 +29,7 @@ class TinyHousesController < ApplicationController
 
   def create
     @tiny_house = TinyHouse.new(tiny_house_params)
-
+    @tiny_house.owner = current_user
     if @tiny_house.save
       redirect_to tiny_house_path(@tiny_house)
     else
