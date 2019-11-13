@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       get :mine
       get :my_rents
     end
+    resources :rents, only: [:new, :create]
   end
   resources :users, only: :show
 
