@@ -7,7 +7,7 @@ const fitMapToMarkers = (map, markers) => {
   };
 
 const initMapbox = () => {
-  const mapElement = document.querySelector('map');
+  const mapElement = document.querySelector('#map');
 
 
 

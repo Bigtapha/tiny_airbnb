@@ -2,6 +2,7 @@ class TinyHousesController < ApplicationController
   def index
     @tiny_houses = TinyHouse.all
 
+    @tiny_houses = TinyHouse.geocoded #returns flats with coordinates
     @markers = @tiny_houses.map do |tiny|
       {
         lat: tiny.latitude,
