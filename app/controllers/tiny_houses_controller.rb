@@ -2,11 +2,12 @@ class TinyHousesController < ApplicationController
   def index
     @tiny_houses = TinyHouse.all
 
-    @tiny_houses = TinyHouse.geocoded #returns flats with coordinates
+    @tiny_houses = TinyHouse.geocoded #returns tinyhouses with coordinates
     @markers = @tiny_houses.map do |tiny|
       {
         lat: tiny.latitude,
-        lng: tiny.longitude
+        lng: tiny.longitude,
+        infoWindow: render_to_string(partial: "info_window", locals: { tiny: tiny })
       }
     end
   end
