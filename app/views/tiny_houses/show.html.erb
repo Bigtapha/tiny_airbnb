@@ -10,5 +10,6 @@
 <p>Connected with Wifi? <%= @tiny_house.wifi %></p>
 <p>Price per night: <%= @tiny_house.price %></p>
 <p><%= link_to 'edit', edit_tiny_house_path(@tiny_house) %></p>
+<p><%= link_to 'delete', tiny_house_path(@tiny_house), method: :delete, data: { confirm: "Are you sure ?" } %></p>
 
 

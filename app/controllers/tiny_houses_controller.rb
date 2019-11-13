@@ -48,7 +48,7 @@ class TinyHousesController < ApplicationController
     redirect_to '/tiny_houses', notice: 'Tiny House updated successfully!'
   end
 
-  def delete
+  def destroy
     @tiny_house = TinyHouse.find(params[:id])
     @tiny_house.destroy
 
