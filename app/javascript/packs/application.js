@@ -5,7 +5,9 @@ import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 
 import { initMapbox } from '../plugins/init_mapbox';
 import { initAutocomplete } from '../plugins/init_autocomplete';
+import { typejs } from '../plugins/typed.js'
 
 
 initMapbox();
 initAutocomplete();
+typejs();
