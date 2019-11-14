@@ -12,12 +12,19 @@
 @import "components/index";
 @import "pages/index";
 
+body {
+  background-color: $bg-white;
+}
+
 a {
   text-decoration: none;
-  color: #000000;
 }
 
 a:hover {
   text-decoration: none;
-  color: #000000;
 }
+
+// Debug pour voir les bordures de toutes les div en rouge (astuce Joseph)
+// * {
+//   border: 1px solid red;
+// }

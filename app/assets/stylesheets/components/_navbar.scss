@@ -1,3 +1,11 @@
+.navbar {
+  border-bottom: 2px solid #000000;
+}
+
+.navbar a {
+  color: #000000;
+}
+
 .navbar-tiny {
   justify-content: space-between;
   background: white;
@@ -9,4 +17,12 @@
 
 .navbar-tiny .navbar-brand img {
   width: 40px;
+}
+
+.menu-right {
+  display: flex;
+}
+
+.navbar-menu {
+  padding-right: 16px;
 }
