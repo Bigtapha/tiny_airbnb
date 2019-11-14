@@ -1,0 +1,8 @@
+<h1>Rent new Tiny House</h1>
+
+<%= simple_form_for [@tiny_house, @rent] do |f| %>
+  <%= f.input :date %>
+  <%= f.submit "add a rent", class: "btn btn-primary" %>
+<% end %>
+
+<%= link_to 'Back', tiny_houses_path %>
