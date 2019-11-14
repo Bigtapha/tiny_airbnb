@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 <h1><%= @tiny_house.title %></h1>
 <p>description : <%= @tiny_house.description %></p>
-<p><%= cl_image_tag @tiny_house.photo, height: 300, width: 400, crop: :fill %></p>
+<p><%= cl_image_tag @tiny_house.photo, height: 500, width: 650, crop: :fill %></p>
 <p>Where is it? <%= @tiny_house.location %></p>
 <p>For <%= @tiny_house.travellers_number %> travellers</p>
 <p>With <%= @tiny_house.bed_number %> bed(s)</p>
@@ -15,5 +15,5 @@
 <%= link_to 'Rent this Tiny', new_tiny_house_rent_path(@tiny_house) %>
 <br>
 <p><%= link_to 'delete', tiny_house_path(@tiny_house), method: :delete, data: { confirm: "Are you sure ?" } %></p>
-
+<p><%= link_to 'All our Tiny Houses', tiny_houses_path(@tiny_house) %></p>
 
