@@ -65,6 +65,8 @@ user4 = User.create!(
   description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
   )
 
+
+
 blackcabin = TinyHouse.create!(
   owner: User.all.sample,
   title: "Black Cabin",
@@ -135,3 +137,133 @@ sunsetcabin = TinyHouse.create!(
   photo: Rails.root.join("app/assets/images/sunset-cabin.jpg").open
   )
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tree = TinyHouse.create!(
+  owner: User.all.sample,
+  title: "Tree Cabin",
+  location: "Le grand chirac, Beaumont-les-Valence",
+  travellers_number: 4, description: "Nice little Tree Cabin in Lorem Ipsum...",
+  price: 70,
+  bed_number: 2,
+  bedroom_number: 1,
+  wifi: "false",
+  kitchen: "true",
+  sauna: "false",
+  photo: Rails.root.join("app/assets/images/tree.jpg").open
+  )
+
+wood = TinyHouse.create!(
+  owner: User.all.sample,
+  title: "Wood Cabin",
+  location: "Les Brus, Saint Basile",
+  travellers_number: 4, description: "Cosy cabin in the wood in Lorem Ipsum...",
+  price: 90,
+  bed_number: 4,
+  bedroom_number: 1,
+  wifi: "true",
+  kitchen: "true",
+  sauna: "false",
+  photo: Rails.root.join("app/assets/images/wood.jpg").open
+  )
+
+littlecabin = TinyHouse.create!(
+  owner: User.all.sample,
+  title: "Little Cabin",
+  location: "La Cambuse, Tarentaise",
+  travellers_number: 4, description: "Cabin on a beautiful view in Lorem Ipsum...",
+  price: 55,
+  bed_number: 1,
+  bedroom_number: 1,
+  wifi: "true",
+  kitchen: "true",
+  sauna: "false",
+  photo: Rails.root.join("app/assets/images/little.jpg").open
+  )
+
+bridgecabin = TinyHouse.create!(
+  owner: User.all.sample,
+  title: "Bridge Cabin",
+  location: "Viaduc de Garabit",
+  travellers_number: 4, description: "Innovative Cabin on a bridge in Lorem Ipsum...",
+  price: 75,
+  bed_number: 4,
+  bedroom_number: 2,
+  wifi: "true",
+  kitchen: "true",
+  sauna: "false",
+  photo: Rails.root.join("app/assets/images/bridge.jpg").open
+  )
+
+islandcabin = TinyHouse.create!(
+  owner: User.all.sample,
+  title: "Island Cabin",
+  location: "Plage de la Pointe, Cap Ferret",
+  travellers_number: 4, description: "The most wonderful sunset scene in the Cabin in Lorem Ipsum...",
+  price: 180,
+  bed_number: 1,
+  bedroom_number: 1,
+  wifi: "true",
+  kitchen: "true",
+  sauna: "true",
+  photo: Rails.root.join("app/assets/images/island.jpg").open
+  )
+
+
+quitcabin = TinyHouse.create!(
+  owner: User.all.sample,
+  title: "Quit Cabin",
+  location: "Bredannaz",
+  travellers_number: 4, description: "Nice little Cabin in Lorem Ipsum...",
+  price: 45,
+  bed_number: 2,
+  bedroom_number: 1,
+  wifi: "true",
+  kitchen: "true",
+  sauna: "false",
+  photo: Rails.root.join("app/assets/images/quit.jpg").open
+  )
+
+hobbitcabin = TinyHouse.create!(
+  owner: User.all.sample,
+  title: "Hobbit Cabin",
+  location: "Onlay",
+  travellers_number: 4, description: "Cosy cabin in Lorem Ipsum...",
+  price: 35,
+  bed_number: 4,
+  bedroom_number: 1,
+  wifi: "true",
+  kitchen: "true",
+  sauna: "false",
+  photo: Rails.root.join("app/assets/images/hobbit.jpg").open
+  )
