@@ -8,12 +8,13 @@ const fitMapToMarkers = (map, markers) => {
 
 const initMapbox = () => {
   const mapElement = document.querySelector('#map');
+  const mapshow = document.querySelector('#mapshow');
 
 
 
   if (mapElement) { // only build a map if there's a div#map to inject into
     mapboxgl.accessToken = mapElement.dataset.mapboxApiKey;
-    const map = new mapboxgl.Map({
+    let map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v11'
     });
@@ -31,6 +32,7 @@ const initMapbox = () => {
 
     fitMapToMarkers(map, markers);
   }
+
 };
 
 export { initMapbox };
