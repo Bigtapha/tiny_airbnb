@@ -138,37 +138,6 @@ sunsetcabin = TinyHouse.create!(
   )
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 tree = TinyHouse.create!(
   owner: User.all.sample,
   title: "Tree Cabin",
@@ -200,8 +169,8 @@ wood = TinyHouse.create!(
 littlecabin = TinyHouse.create!(
   owner: User.all.sample,
   title: "Little Cabin",
-  location: "La Cambuse, Tarentaise",
-  travellers_number: 4, description: "Cabin on a beautiful view in Lorem Ipsum...",
+  location: "Route du Pont Souvignet, Tarentaise",
+  travellers_number: 4, description: "Cabin with a beautiful view in Lorem Ipsum...",
   price: 55,
   bed_number: 1,
   bedroom_number: 1,
@@ -228,7 +197,7 @@ bridgecabin = TinyHouse.create!(
 islandcabin = TinyHouse.create!(
   owner: User.all.sample,
   title: "Island Cabin",
-  location: "Plage de la Pointe, Cap Ferret",
+  location: "Boulevard de la Plage, Cap Ferret",
   travellers_number: 4, description: "The most wonderful sunset scene in the Cabin in Lorem Ipsum...",
   price: 180,
   bed_number: 1,
