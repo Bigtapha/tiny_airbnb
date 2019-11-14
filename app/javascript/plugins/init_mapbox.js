@@ -1,4 +1,6 @@
 import mapboxgl from 'mapbox-gl';
+import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
+
 
 const fitMapToMarkers = (map, markers) => {
   const bounds = new mapboxgl.LngLatBounds();
@@ -30,7 +32,11 @@ const initMapbox = () => {
     });
 
     fitMapToMarkers(map, markers);
+
+    map.addControl(new MapboxGeocoder({ accessToken: mapboxgl.accessToken }));
+    
   }
+
 };
 
 export { initMapbox };

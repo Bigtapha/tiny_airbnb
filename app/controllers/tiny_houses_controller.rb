@@ -21,7 +21,14 @@ class TinyHousesController < ApplicationController
   end
 
   def show
+    @tiny_house = TinyHouse.geocoded
     @tiny_house = TinyHouse.find(params[:id])
+    tiny = @tiny_house
+    @markers = [
+      lat: @tiny_house.latitude,
+      lng: @tiny_house.longitude,
+      infoWindow: render_to_string(partial: "info_window",  locals: { tiny: tiny })
+    ]
   end
 
   def new
