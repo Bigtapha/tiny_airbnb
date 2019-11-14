@@ -15,7 +15,7 @@ gem 'sassc-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
-
+gem 'pundit'
 gem 'faker'
 gem 'awesome_print'
 gem 'cloudinary', '~> 1.9.1'

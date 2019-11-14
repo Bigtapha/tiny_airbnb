@@ -1,15 +1,17 @@
 class TinyHousesController < ApplicationController
   def index
+    authorize @tiny_house
     @tiny_houses = TinyHouse.all
-
+    @tiny_houses = policy_scope(TinyHouse).order(created_at: :desc)
     @tiny_houses = TinyHouse.geocoded #returns tinyhouses with coordinates
     @markers = @tiny_houses.map do |tiny|
       {
         lat: tiny.latitude,
         lng: tiny.longitude,
-        infoWindow: render_to_string(partial: "info_window", locals: { tiny: tiny })
-      }
-    end
+        infoWindow: render_to_string(partial: "info_window", locals: { tiny: tiny})
+
+        }
+      end
   end
 
   def mine
