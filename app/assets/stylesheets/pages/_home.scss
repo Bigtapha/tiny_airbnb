@@ -7,6 +7,7 @@
   margin-right: 0px;
   margin-left: 0px;
   object-fit: cover;
+  position: relative;
 }
 
 .flex-buttons {
@@ -19,7 +20,7 @@
   font-size: 1.25em;
   letter-spacing: .09375em;
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 10%;
   color: #FFFFFF ;
   background-color: transparent;
@@ -28,7 +29,7 @@
   border-radius: 6px;
   display: inline-block;
   transition: all 0.3s ease 0s;
-  margin-top: 24px;
+  margin: 0;
 }
 
 #home-signup-button:hover {
@@ -39,6 +40,18 @@
 
 #home-signup-button:hover a {
   color: #000000 !important;
+}
+
+#home-login {
+  font-weight: 900;
+  font-size: 1.25em;
+  letter-spacing: .09375em;
+  position: absolute;
+  top: 45%;
+  left: 22%;
+  padding: 10px 20px;
+  color: #FFFFFF ;
+  transition: all 0.3s ease 0s;
 }
 
 h1 {
@@ -52,15 +65,15 @@ h1 {
   padding-top: 10%;
 }
 
-// #home-login {
-//   font-weight: 900;
-//   font-size: 1.25em;
-//   letter-spacing: .09375em;
-//   position: absolute;
-//   top: 40%;
-//   left: 20%;
-//   color: #FFFFFF ;
-//   transition: all 0.3s ease 0s;
-//   margin-top: 24px;
-// }
+#typed {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.main-title {
+  margin-bottom: 40px;
+}
+
+
 
