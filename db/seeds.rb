@@ -1,3 +1,4 @@
+Rent.destroy_all
 TinyHouse.destroy_all
 User.destroy_all
 
