@@ -33,7 +33,7 @@
         ></div>
 
         <% if @tiny_house.owner_id != current_user.id %>
-          <button class="bluebutton">Rent this Tiny House!</button>
+          <button class="bluebutton rent">Rent this Tiny House!</button>
         <% end%>
 
         <button class="blackbutton"><%= link_to 'All our Tiny Houses', tiny_houses_path(@tiny_house) %></button>
