@@ -14,6 +14,7 @@ class TinyHousesController < ApplicationController
 
   def mine
     @my_tiny_houses = current_user.own_tiny_houses
+
   end
 
   def my_rents
@@ -29,6 +30,8 @@ class TinyHousesController < ApplicationController
       lng: @tiny_house.longitude,
       infoWindow: render_to_string(partial: "info_window",  locals: { tiny: tiny })
     ]
+
+    @rent = Rent.new
   end
 
   def new

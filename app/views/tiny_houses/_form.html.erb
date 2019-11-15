@@ -1,6 +1,6 @@
   <%= simple_form_for(@tiny_house) do |f| %>
     <%= f.input :title %>
-    <%= f.input :description, as: :text %>
+    <%= f.input :description, as: :text, placeholder: 'Dexcribe your Tiny' %>
     <%= f.input :photo %>
     <%= f.input :photo_cache, as: :hidden %>
     <%= f.input :location, placeholder: 'add Tiny address' %>

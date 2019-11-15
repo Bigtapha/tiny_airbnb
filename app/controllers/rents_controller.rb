@@ -1,9 +1,9 @@
 class RentsController < ApplicationController
 
-  def new
-    @tiny_house = TinyHouse.find(params[:tiny_house_id])
-    @rent = Rent.new
-  end
+  # def new
+  #   @tiny_house = TinyHouse.find(params[:tiny_house_id])
+  #   @rent = Rent.new
+  # end
 
   def create
     @rent = Rent.new(rent_params)
@@ -11,9 +11,9 @@ class RentsController < ApplicationController
     @rent.tiny_house_id = params[:tiny_house_id]
     @rent.user_id = current_user.id 
     if @rent.save
-        redirect_to tiny_houses_path, notice: 'Rent was successfully created.'
+        redirect_to my_rents_tiny_houses_path, notice: 'Rent was successfully created.'
     else
-        render :new
+        render 'tiny_houses/show'
     end
   end
 

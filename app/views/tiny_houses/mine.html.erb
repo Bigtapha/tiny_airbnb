@@ -6,7 +6,17 @@
     <p><%= tiny.description %></p>
     <p class="photo-index"><%= cl_image_tag tiny.photo, height: 300, width: 400, crop: :fill %></p>
     <p><%= link_to 'show', tiny_house_path(tiny.id) %></p>
+    <p><%= link_to 'edit', edit_tiny_house_path(tiny) %></p>
+    <p><%= link_to 'delete', tiny_house_path(tiny), method: :delete, data: { confirm: "Are you sure ?" } %></p>
   <% end %>
+</div>
+
+<div class="user-info">
+  <p>My Profil </p>
+  <p> Name: John Doe </p>
+  <p> Email: <%= current_user.email %> </p>
+  <p> Telephone: 06-56-84-58-69</p>
+  <p> Number of Tiny: <%= @my_tiny_houses.size %></p>
 </div>
 
 <h4><%= link_to 'Add a new Tiny House', new_tiny_house_path %></h4>
