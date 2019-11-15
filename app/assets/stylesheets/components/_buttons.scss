@@ -1,0 +1,38 @@
+.blackbutton {
+  margin-top: 12px;
+  background-color: #000000;
+  border: none;
+  color: #FFFFFF;
+  padding: 15px 32px;
+  margin-bottom: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: all 0.2s ease 0s;
+}
+
+.blackbutton:hover {
+  border-radius: 15px;
+  transition: all 0.2s ease 0s;
+}
+
+.bluebutton {
+  margin-top: 16px;
+  background-color: #5DB7B7;
+  border: none;
+  color: #FFFFFF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: all 0.2s ease 0s;
+}
+
+.bluebutton:hover {
+  border-radius: 15px;
+  transition: all 0.2s ease 0s;
+}
