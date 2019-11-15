@@ -7,8 +7,7 @@ const typejs = () => {
 //   // strings: ['Bienvenue chez vous', ' Votre cocon vous attend'],
 //   typeSpeed: 40
 // };
-result = document.querySelector('#typed-strings')
-console.log(result)
+const result = document.querySelector('#typed-strings')
 if (result){
   var typed = new Typed('#typed', {
     stringsElement: '#typed-strings',
