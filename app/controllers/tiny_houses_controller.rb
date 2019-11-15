@@ -7,7 +7,8 @@ class TinyHousesController < ApplicationController
       {
         lat: tiny.latitude,
         lng: tiny.longitude,
-        infoWindow: render_to_string(partial: "info_window", locals: { tiny: tiny })
+        infoWindow: render_to_string(partial: "info_window", locals: { tiny: tiny }),
+        image_url: helpers.asset_url('tiny-pin.svg')
       }
     end
   end
