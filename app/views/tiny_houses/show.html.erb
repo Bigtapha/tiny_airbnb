@@ -20,6 +20,12 @@
         <p>Does it have a kitchen? <%= @tiny_house.kitchen %></p>
         <p>Connected with Wifi? <%= @tiny_house.wifi %></p>
         <p>Price per night: <%= @tiny_house.price %>€</p>
+      <% if @tiny_house.owner_id != current_user.id %>
+      <br>
+          <button class="bluebutton rent">Rent this Tiny House!</button>
+        <% end%>
+
+        <button class="blackbutton"><%= link_to 'All our Tiny Houses', tiny_houses_path(@tiny_house) %></button>
       </div>
 
       <div class="maptoright">
@@ -32,11 +38,7 @@
           data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
         ></div>
 
-        <% if @tiny_house.owner_id != current_user.id %>
-          <button class="bluebutton rent">Rent this Tiny House!</button>
-        <% end%>
 
-        <button class="blackbutton"><%= link_to 'All our Tiny Houses', tiny_houses_path(@tiny_house) %></button>
 
       </div>
     </div>

@@ -18,6 +18,14 @@
   transition: all 0.2s ease 0s;
 }
 
+.blackbutton a {
+  color: #FFFFFF;
+}
+
+.blackbutton:hover a {
+  color: #FFFFFF;
+}
+
 .bluebutton {
   margin-top: 16px;
   background-color: #5DB7B7;
