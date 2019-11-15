@@ -37,6 +37,10 @@
   margin: 0;
 }
 
+#home-signup-button a {
+  color: #FFFFFF;
+}
+
 #home-signup-button:hover {
   background-color: rgba(255, 255, 255, 1);
   border-radius: 12px;
@@ -49,7 +53,7 @@
 
 #home-login {
   font-weight: 900;
-  font-size: 1.25em;
+  font-size: 1.50em;
   letter-spacing: .09375em;
   position: absolute;
   top: 45%;
@@ -57,6 +61,10 @@
   padding-top: 15px;
   color: #FFFFFF ;
   transition: all 0.3s ease 0s;
+}
+
+#home-login a {
+  color: #FFFFFF;
 }
 
 .title {
@@ -80,5 +88,35 @@
   margin-bottom: 40px;
 }
 
+#center-position {
+  text-align: center;
+  margin: 0 auto;
+}
 
+#blackbutton-home {
+  font-weight: 400;
+  font-size: 1.25em;
+  letter-spacing: .09375em;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  top: 45%;
+  left: 10%;
+  color: #000000 ;
+  background-color: transparent;
+  padding: 10px 20px;
+  border: 4px solid #000000 ;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
 
+#blackbutton-home:hover {
+  background-color: rgba(0, 0, 0, 1);
+  color: #FFFFFF;
+  border-radius: 12px;
+  transition: all 0.3s ease 0s;
+}
+
+#blackbutton-home:hover a {
+  color: #FFFFFF;
+}

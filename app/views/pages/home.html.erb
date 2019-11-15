@@ -1,21 +1,23 @@
 <div id="herobanner">
-  <div class="main-title">
-    <div class="title">
-      <h1>Connect with Nature with our Tiny Houses</h1>
-    </div>
-      <div id="typed-strings">
-        <p>Disconnect...</p>
-        <p>Meditate...</p>
-        <p>Dream...</p>
+    <div class="main-title">
+      <div class="title">
+        <h1>Connect with Nature with our Tiny Houses</h1>
       </div>
-      <span id="typed"></span>
-  </div>
+        <div id="typed-strings">
+          <p>Disconnect...</p>
+          <p>Meditate...</p>
+          <p>Dream...</p>
+        </div>
+        <span id="typed"></span>
+    </div>
 
-  <div class="flex-buttons">
-    <p id="home-signup-button"><%= link_to 'Sign Up', new_user_registration_path%></p>
-    <p id="home-login"><%= link_to 'Log In', new_user_session_path%></p>
+    <div class="flex-buttons">
+      <p id="home-signup-button"><%= link_to 'Sign Up', new_user_registration_path%></p>
+      <p id="home-login"><%= link_to 'Log In', new_user_session_path%></p>
+    </div>
+  </div>
+<div class="container">
+  <div id="center-position">
+    <button id="blackbutton-home"><%= link_to 'All our Tiny Houses', tiny_houses_path%></button>
   </div>
 </div>
-
-<p><%= link_to 'All our Tiny Houses', tiny_houses_path%></p>
-
