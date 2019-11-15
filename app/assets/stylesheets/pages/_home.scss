@@ -7,8 +7,12 @@
   padding-left: 0px;
   margin-right: 0px;
   margin-left: 0px;
-  object-fit: cover;
+  background-size: cover;
   position: relative;
+
+  a {
+    color: black;
+  }
 }
 
 .flex-buttons {
