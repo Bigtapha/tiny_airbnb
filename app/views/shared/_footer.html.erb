@@ -1,39 +1,38 @@
-<div class="footer-bg">
-  <div class="container">
+  <div class="footer-bg">
+    <div class="container">
 
-    <div class="flex-footer">
-      <div class="left">
-        <div class="contact-us">
-          <div class="logo">
-            <%= link_to '', class: "contact" do %>
-              <%= image_tag("email-icon.svg") %>
+      <div class="flex-footer">
+        <div class="left">
+          <div class="contact-us">
+            <div class="logo">
+              <%= link_to '', class: "contact" do %>
+                <%= image_tag("email-icon.svg") %>
+              <% end %>
+            </div>
+            <div>
+              <p>Nous Contacter</p>
+            </div>
+          </div>
+          <p class="lewagon">Made with love at Le Wagon</p>
+        </div>
+
+        <div class="right">
+          <div>
+            <%= link_to '', class: "insta" do %>
+              <%= image_tag("instagram-logo.svg") %>
             <% end %>
           </div>
           <div>
-            <p>Nous Contacter</p>
+            <%= link_to '', class: "twitter" do %>
+              <%= image_tag("twitter.svg") %>
+            <% end %>
           </div>
-        </div>
-        <p>Made with love at Le Wagon</p>
-      </div>
-
-      <div class="right">
-        <div>
-          <%= link_to '', class: "insta" do %>
-            <%= image_tag("instagram-logo.svg") %>
-          <% end %>
-        </div>
-        <div>
-          <%= link_to '', class: "twitter" do %>
-            <%= image_tag("twitter.svg") %>
-          <% end %>
-        </div>
-        <div>
-          <%= link_to '', class: "facebook" do %>
-            <%= image_tag("facebook.svg") %>
-          <% end %>
+          <div>
+            <%= link_to '', class: "facebook" do %>
+              <%= image_tag("facebook.svg") %>
+            <% end %>
+          </div>
         </div>
       </div>
     </div>
-
-  </div>
 </div>
