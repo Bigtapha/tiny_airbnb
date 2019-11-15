@@ -8,7 +8,7 @@ import { initAutocomplete } from '../plugins/init_autocomplete';
 
 import { newRents } from '../plugins/init_new_rents';
 
-import { typejs } from '../plugins/typed.js'
+import { typejs } from '../plugins/typed.js';
 
 
 
