@@ -25,13 +25,13 @@ class TinyHousesController < ApplicationController
   def show
     @tiny_house = TinyHouse.geocoded
     @tiny_house = TinyHouse.find(params[:id])
-    tiny = @tiny_house
+    # tiny = @tiny_house
     @markers = [
       lat: @tiny_house.latitude,
       lng: @tiny_house.longitude,
-      infoWindow: render_to_string(partial: "info_window",  locals: { tiny: tiny })
+      infoWindow: render_to_string(partial: "info_window",  locals: { tiny: @tiny_house }),
+      image_url: helpers.asset_url('tiny-pin.svg')
     ]
-
     @rent = Rent.new
   end
 
