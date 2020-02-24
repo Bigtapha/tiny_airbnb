@@ -1,7 +1,7 @@
 Rent.destroy_all
 TinyHouse.destroy_all
 User.destroy_all
-
+puts "Seeds begin"
 #  7.times do
 #   user = User.new(
 #     name: Faker::Name.name,
@@ -237,3 +237,5 @@ hobbitcabin = TinyHouse.create!(
   sauna: "false",
   photo: Rails.root.join("app/assets/images/hobbit.jpg").open
   )
+
+puts "seeds end"
